@@ -1,0 +1,29 @@
+git init //first so that we start git inside the repo and git knows what we are doing inside that repo
+
+git status // to Know where we are currently if we have saved porgress or not
+
+git add or git add .  for saving individual or all files
+
+git commit -m // m means message to the git add to save in the history
+
+git restore --staged names.txt  // to remove the fiel from the git
+
+git log  // all the commits history
+
+we can also detle a file and then modify the git 
+ liek rm -rf names.txt 
+	git status // file missing
+	git add . // updating the files now
+	git commit -m " the file was deleted oops"
+
+
+git reset "hashid of the commit"we get after git log // the logs of commit above this has commit will be gone
+
+
+/// to get a backup
+
+first git add . //first load them and then put backstage git stash 
+then git stash 
+ the files we have put before the git stash command are now backed up and wont show up until we want them to
+
+
